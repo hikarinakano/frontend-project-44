@@ -2,5 +2,5 @@
 
 console.log("Welcome to the Brain Games!")
 
-import greeting from 'cli.js';
- 
+import { userName } from '../src/cli.js';
+
