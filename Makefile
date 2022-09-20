@@ -10,3 +10,6 @@ publish: # execute npm publish
 
 make lint: # launch npx eslint
 	npx eslint .	
+
+brain-even: # launch brain-even
+	node bin/brain-even.js
