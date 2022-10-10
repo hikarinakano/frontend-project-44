@@ -5,11 +5,11 @@ import readlineSync from 'readline-sync';
 
 
 function brainCalcCheck(counter) {
-    console.log('What is the result of the expression?');
     if (counter === 0) {
       console.log(`Congratulations, ${userNameGreeting}!`);
       return;
     }
+    console.log('What is the result of the expression?');
     const randomNumber1 = Math.floor(Math.random() * 100);
     const randomNumber2 = Math.floor(Math.random() * 50);
     const input = readlineSync.question(`Question: ${randomNumber1} + ${randomNumber2}\nYour answer:`);
