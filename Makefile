@@ -16,3 +16,6 @@ brain-even: # launch brain-even
 
 brain-calc: # launch brain-calc
 	node bin/brain-calc.js	
+
+brain-gcd: 	# launch brain-gcd
+	node bin/brain-gcd.js
