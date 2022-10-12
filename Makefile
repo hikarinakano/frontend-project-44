@@ -22,3 +22,5 @@ brain-gcd: 	# launch brain-gcd
 
 brain-progression: # launch brain-progression
 	node bin/brain-progression.js	
+brain-prime: # launch brain-prime.js
+	node bin/brain-prime.js	
