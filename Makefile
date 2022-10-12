@@ -19,3 +19,6 @@ brain-calc: # launch brain-calc
 
 brain-gcd: 	# launch brain-gcd
 	node bin/brain-gcd.js
+
+brain-progression: # launch brain-progression
+	node bin/brain-progression.js	
