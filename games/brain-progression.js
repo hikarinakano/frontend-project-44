@@ -1,7 +1,7 @@
 import randomize from "../src/randomize.js";
 import gameSequence from "../src/index.js";
 
-const greetingQuestion = 'What is the result of the expression?';
+const greetingQuestion = 'What number is missing in the progression?';
 
 function brainLogic() {
     const { randomNumber1, randomNumber2 } = randomize();
