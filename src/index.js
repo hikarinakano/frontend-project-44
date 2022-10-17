@@ -1,10 +1,10 @@
-import readlineSync from 'readline-sync'
+import readlineSync from 'readline-sync';
 
 function gameSequence(greetingQuestion, brainLogic) {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(greetingQuestion)
+  console.log(greetingQuestion);
 
   for (let round = 1; round <= 3; round += 1) {
     const { question, rightAnswer } = brainLogic();
@@ -15,7 +15,6 @@ function gameSequence(greetingQuestion, brainLogic) {
       return;
     }
     console.log('Correct!');
-
   }
   console.log(`Congratulations, ${name}!`);
 }
