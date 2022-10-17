@@ -4,7 +4,7 @@ import gameSequence from '../src/index.js';
 const greetingQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function brainLogic() {
-  const { randomNumber1, _ } = randomize();
+  const { randomNumber1 } = randomize();
   function checkPrime() {
     if (randomNumber1 === 0 || randomNumber1 === 1) {
       return 'no';
