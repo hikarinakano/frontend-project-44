@@ -1,26 +1,25 @@
-import gameSequence from "../src/index.js";
-import randomize from "../src/randomize.js";
+import gameSequence from '../src/index.js';
+import randomize from '../src/randomize.js';
+
+function gcd(first, second) {
+  if (second === 0) {
+    return first;
+  }
+  return gcd(second, first % second);
+}
 
 const greetingQuestion = 'Find the greatest common divisor of given numbers.';
 function brainLogic() {
-    const { randomNumber1, randomNumber2 } = randomize();
-    const question = `${randomNumber1} ${randomNumber2} `;
+  const { randomNumber1, randomNumber2 } = randomize();
+  const question = `${randomNumber1} ${randomNumber2} `;
 
-    const rightAnswer = `${gcd(randomNumber1, randomNumber2)}`;
+  const rightAnswer = `${gcd(randomNumber1, randomNumber2)}`;
 
-    return { question, rightAnswer };
+  return { question, rightAnswer };
 }
 
-function gcd(first, second) {
-
-    if (second === 0) {
-        return first;
-    }
-    return gcd(second, first % second);
-};
-
 function startGcdGame() {
-    gameSequence(greetingQuestion, brainLogic);
+  gameSequence(greetingQuestion, brainLogic);
 }
 
 export default startGcdGame;
