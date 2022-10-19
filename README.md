@@ -4,4 +4,4 @@
 <a href="https://codeclimate.com/github/hikarinakano/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/e103aa8a04a17bc1fd24/maintainability" /></a>
 
 <h3>asciinema brain-even demo</h>
-[![asciicast](https://asciinema.org/a/530202.svg)](https://asciinema.org/a/530202)
+<a href="https://asciinema.org/a/530206" target="_blank"><img src="https://asciinema.org/a/530206.svg" /></a>
