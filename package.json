@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/hikarinakano/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hikarinakano/frontend-project-44/actions)",
+  "description": "Project contains 5 small brain games, each with unique logic. The games are available through terminal.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
