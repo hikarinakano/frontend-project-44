@@ -10,10 +10,12 @@
 </ul>
 
 <h2>Installation instructions:<h2>
-<code>"git clone git @github:hikarinakano/frontend-project-44.git
-cd frontend-project-44.git
-npm link"
-</code>
+<pre>
+    <code>"git clone git @github:hikarinakano/frontend-project-44.git
+    cd frontend-project-44.git
+    npm link"
+    </code>
+</pre>    
 
 <h3>asciinema brain-even demo</h3>
 <a href="https://asciinema.org/a/530202" target="_blank"><img src="https://asciinema.org/a/530202.svg" /></a>
