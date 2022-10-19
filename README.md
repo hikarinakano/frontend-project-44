@@ -2,12 +2,16 @@
 [![Actions Status](https://github.com/hikarinakano/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/hikarinakano/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/hikarinakano/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/e103aa8a04a17bc1fd24/maintainability" /></a>
-
-<h2>Requirements:<h2>
+<h1>Brain-games is a small project that consists of 5 mathematical games you can try and play!</h3>
+<h2>Requirements:</h2>
 <ul>
     <li>Node.js from 18.0</li>
     <li>Working terminal</li>
 </ul>
+
+<h2>Installation instructions:<h2>
+<code>"git clone git @github:hikarinakano/frontend-project-44.git\n cd frontend-project-44.git\n npm link
+</code>
 
 <h3>asciinema brain-even demo</h3>
 <a href="https://asciinema.org/a/530202" target="_blank"><img src="https://asciinema.org/a/530202.svg" /></a>
