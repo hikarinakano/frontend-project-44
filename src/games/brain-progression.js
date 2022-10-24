@@ -1,27 +1,30 @@
 import getRandomNumber from '../number-randomizer.js';
 import startCommonGameLogic from '../index.js';
 
-const greetingQuestion = 'What number is missing in the progression?';
+const gamesDescription = 'What number is missing in the progression?';
 
-function createProgression(number, commonDifference) {
+const progressionLength = 10;
+
+function createProgression(firstNum, commonDifference) {
   const result = [];
-  for (let i = 0, progressionCount = 1; progressionCount <= 10; i += 1, progressionCount += 1) {
-    result.push(number + commonDifference * i);
+  for (let i = 1; i <= progressionLength; i += 1) {
+    result.push(firstNum + commonDifference * i);
   }
   return result;
 }
 
-function passVariables() {
+function buildRoundsData() {
   const randomNumber = getRandomNumber(1, 30);
   const commonDifference = getRandomNumber(1, 20);
-  const randomOfTen = getRandomNumber(0, 9);
-  const rightAnswer = String(createProgression(randomNumber, commonDifference)[randomOfTen]);
-  const question = createProgression(randomNumber, commonDifference).join(' ').replace(rightAnswer, '..');
+  const newProgression = createProgression(randomNumber, commonDifference);
+  const randomOfProgressionLength = getRandomNumber(0, (newProgression.length - 1));
+  const rightAnswer = String(newProgression[randomOfProgressionLength]);
+  const question = newProgression.join(' ').replace(rightAnswer, '..');
   return { question, rightAnswer };
 }
 
 function startProgressionGame() {
-  startCommonGameLogic(greetingQuestion, passVariables);
+  startCommonGameLogic(gamesDescription, buildRoundsData);
 }
 
 export default startProgressionGame;
