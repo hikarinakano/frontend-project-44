@@ -1,9 +1,9 @@
 import getRandomNumber from '../number-randomizer.js';
 import startCommonGameLogic from '../index.js';
 
-const greetingQuestion = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gamesDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function checkifPrime(number) {
+function isPrime(number) {
   if (number < 2) {
     return false;
   }
@@ -14,16 +14,15 @@ function checkifPrime(number) {
   } return true;
 }
 
-function passVariables() {
+function buildRoundsData() {
   const randomNumber = getRandomNumber(0, 50);
-  const question = randomNumber;
-  const rightAnswer = checkifPrime(randomNumber) ? 'yes' : 'no';
+  const rightAnswer = isPrime(randomNumber) ? 'yes' : 'no';
 
-  return { question, rightAnswer };
+  return { question: randomNumber, rightAnswer };
 }
 
 function startPrimeGame() {
-  startCommonGameLogic(greetingQuestion, passVariables);
+  startCommonGameLogic(gamesDescription, buildRoundsData);
 }
 
 export default startPrimeGame;
