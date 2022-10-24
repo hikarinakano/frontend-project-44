@@ -8,9 +8,9 @@ function greatestCommonDivisor(first, second) {
   return greatestCommonDivisor(second, first % second);
 }
 
-const greetingQuestion = 'Find the greatest common divisor of given numbers.';
+const gamesDescription = 'Find the greatest common divisor of given numbers.';
 
-function passVariables() {
+function buildRoundsData() {
   const randomNumber1 = getRandomNumber(1, 20);
   const randomNumber2 = getRandomNumber(1, 30);
   const question = `${randomNumber1} ${randomNumber2} `;
@@ -21,7 +21,7 @@ function passVariables() {
 }
 
 function startGcdGame() {
-  startCommonGameLogic(greetingQuestion, passVariables);
+  startCommonGameLogic(gamesDescription, buildRoundsData);
 }
 
 export default startGcdGame;
