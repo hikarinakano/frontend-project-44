@@ -11,8 +11,9 @@ function makeOperation(number1, number2, operation) {
       return number1 - number2;
     case '*':
       return number1 * number2;
+    default:
+      throw new Error('Unsupported operation!');
   }
-
 }
 
 const gamesDescription = 'What is the result of the expression?';
